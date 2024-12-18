@@ -1,0 +1,52 @@
+// FOOTER
+.footer {
+  background-color: $tex-dark;
+  &__container {
+    display: grid;
+    gap: 4rem 2rem;
+  }
+  &__col .section__description {
+    margin-block: 2rem;
+  }
+  &__col {
+    h4 {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+  &__links {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    a {
+      color: $text-light;
+      transition: 0.3s;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  &__socials {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    img {
+      max-width: 25px;
+      opacity: 0.8;
+      transition: 0.3s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &__bar {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: $text-light;
+    text-align: center;
+  }
+}

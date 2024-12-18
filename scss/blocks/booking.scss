@@ -1,0 +1,49 @@
+// BOOKING
+
+.booking__container {
+  padding-block: 0;
+}
+
+.booking__form {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+  transform: translateY(-50%);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.input__group {
+  flex: 1 1 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  span {
+    font-size: 1.75rem;
+    color: $primary-color;
+  }
+  label {
+    font-weight: 500;
+    color: $tex-dark;
+  }
+  input {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    padding-block: 5px;
+    color: $tex-dark;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    &::placeholder {
+      color: $text-light;
+    }
+  }
+  &-item {
+    border-bottom: 1px solid $primary-color;
+  }
+}

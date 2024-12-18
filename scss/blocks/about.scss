@@ -1,0 +1,83 @@
+// About
+.about__container {
+  overflow: hidden;
+  display: grid;
+  gap: 2rem;
+}
+
+.about__image {
+  img {
+    max-width: 450px;
+    margin: auto;
+    border-radius: 5px;
+  }
+}
+
+.room__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.room__card {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  &__image {
+    position: relative;
+    isolation: isolate;
+  }
+  &__icons {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 1;
+    span {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 1.5rem;
+      background-color: #fff;
+      border-radius: 100%;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      &:nth-child(1) {
+        color: #f472b6;
+      }
+      &:nth-child(2) {
+        color: #c084fc;
+      }
+      &:nth-child(3) {
+        color: #60a5fa;
+      }
+    }
+  }
+  &__details {
+    padding: 1rem;
+  }
+  h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $tex-dark;
+  }
+  p {
+    margin-bottom: 0.5rem;
+    color: $text-light;
+  }
+  h5 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $text-light;
+    span {
+      font-size: 1.1rem;
+      color: $tex-dark;
+    }
+  }
+}
